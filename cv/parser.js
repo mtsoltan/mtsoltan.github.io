@@ -28,8 +28,8 @@ function buildTop(cv) {
       <div class="header right">
         ${cv.contact.phone} <br>
         ${cv.contact.mail} <br>
-        <a>${cv.contact.github}</a> <br>
-        <a>${cv.contact.linkedin}</a> <br>
+        <a href="${cv.contact.github}">${cv.contact.github}</a> <br>
+        <a href="${cv.contact.linkdedin}">${cv.contact.linkedin}</a> <br>
       </div>
     </div>`
 }
