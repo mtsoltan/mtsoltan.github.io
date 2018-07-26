@@ -1,0 +1,282 @@
+{
+  "_description"  : "ogranization1 is for main sections. The main sections name, title, contact, and pitch do not follow organization1, and are hard-coded. organization2 is for work and skills subsections.",
+  "organization1"  : ["work experience", "education", "courses", "student activities", "awards and honors", "languages", "soft skills", "interests", "skills"],
+  "organization2" : ["engineering", "programming", "other"],
+  "name"          : "Mahmoud Soltan",
+  "title"         : "Web Developer",
+  "contact"       : {
+    "mail"          : "mahmoud.t.soltan@gmail.com",
+    "phone"         : "+201000543938",
+    "website"       : "",
+    "github"        : "https://github.com/mtsoltan",
+    "linkedin"      : "https://www.linkedin.com/in/mahmoudtsoltan/"
+  },
+  "pitch"         : "Fast learning full stack developer up to date with the newest Javascript technologies. Worked on developing multiple large scale websites and maintaining MVC code with a team of GIT collaborators. Can implement the software you need in the language / architecture you want. Won first place in the 2017 Landmine Free international mine-sweeping competition, designing code for an autonomous 95% error-free mine detecting robot. Able to write scalable well documented code to build solid applications and websites. Well versed in writing code for large-scale cross-platform applications and designing small-scale IoT solutions.",
+  "work experience"    : {
+    "engineering"   : [
+      { "title"       : "Electric Engineer",
+        "company"     : "Easy3D CNC Solutions",
+        "date"        : ["Sep 2017", "Jul 2018"],
+        "bullets"     : [
+          "Worked closely with a team of 5 people to build efficient budget friendly products and solutions."
+        ]
+      },
+      { "title"       : "Computer Repair",
+        "company"     : "TimePC Computer Solutions",
+        "date"        : ["Jan 2011", "Sep 2011"],
+        "bullets"     : [
+          "Held an astonishing 100% success rate in software troubleshooting.",
+          "Distinguished in laptop disassembly and hardware troubleshooting"
+        ]
+      }
+    ],
+    "programming"   : [
+      { "title"       : "Freelance Software Engineer",
+        "company"     : "",
+        "date"        : ["Dec 2011", "Present"],
+        "bullets"     : [
+          "Built multiple private file hosting sites and forums.",
+          "Collaboratively built large scalable web and desktop applications for individuals in the marketing and research industries."
+        ]
+      },
+      { "title"       : "Web Developer",
+        "company"     : "Various Content Serving / Archiving Websites",
+        "date"        : ["Feb 2018", "Jun 2018"],
+        "bullets"     : [
+          "Worked remotely on large-scale websites with capable teams to deliver a fast, interactive user experience.",
+          "Wrote professional code that passed standardized testing and quality control procedures.",
+          "Fixed issues and bugs, and implemented new features in code developed by other professionals in the field."
+        ]
+      }
+    ],
+    "other"         : [
+      { "title"       : "Editor and Typist",
+        "company"     : "Private Individuals",
+        "date"        : ["Feb 2010", "Jan 2011"],
+        "bullets"     : [
+          "Typed novel/short story writers with an average of 101 wpm.",
+          "Fixed usage mistakes and revised sentence structure for multiple speeches, letters, and short stories."
+        ]
+      }
+    ]
+  },
+  "skills"        : {
+    "engineering"   : [
+      { "title"       : "Computer Hardware",
+        "bullets"     : [
+          "Profound understanding of the inner workings of a computer system.",
+          "Thorough knowledge of computer architecture, computer organization, and physical hardware implementation.",
+          "Technical knowledge in computer buses and peripheral interfacing systems such as USB, PCIe, sATA, and Ethernet.",
+          "Moderate theoretical background in VLSI and hardware manufacturing."
+        ]
+      },
+      { "title"       : "Electric Design",
+        "bullets"     : [
+          "Skill in designing basic single and double layer PCB cards for general purposes and for driving / controlling various machinery.",
+          "Skill in designing shields and PCB boards that facilitate interfacing for various commercially available micro-controllers."
+        ]
+      }
+    ],
+    "programming"   : [
+      { "title"       : "General Programming",
+        "bullets"     : [
+          "Professional experience and ability to quickly write coherent in any programming language with a documentation in hand.",
+          "Profound understanding of the workings of Javascript parsers, interpreters, and engines, and thorough knowledge of the Javascript documentation. Knowledge of the newest Javascript features as they come, and avid follower of Javascript conferences / conventions.",
+          "Passion for standards and white papers. Ability to navigate W3C standards documents and RFC documents with ease.",
+          "Advanced GIT, SSH, and Vagrant usage and knowledge. Strong sense of the importance of collaboration and team presence.",
+          "Familiar with almost all IDEs. Developed on Visual Studio, PHPStorm, Eclipse, Atom, Notepad++, and Dreamweaver.",
+          "Professional experience and ability and familiarity with writing testing benches for my own code. Ability to adhere with syntax formatting and variable naming standards used by my team.",
+          "Professional experience in writing highly modular code with multiple layers of abstraction for easy maintainability.",
+          "Professional experience and ability to follow through and quickly understand code written by others with very minimal need of their guidance or input in order to be able to quickly immerse self in helping maintaining large projects.",
+          "Familiarity with various MIME types, how the browser / other computer software handle them, and ability to follow through their RFC papers.",
+          "Professional experience using various data and setting storage formats like XML, YAML, JSON, INI, among others to create software and web application configuration files, settings files, and strings / resource binding files to make easy-to-modify applications with multiple environments (development, staging, production).",
+          "Professional experience abstracting software strings in distinct hierarchies to allow for scalable multi-language applications with easy language addition and easy language changing."
+        ]
+      },
+      { "title"       : "Web Development",
+        "bullets"        : [
+          "Professional experience and ability to build scalable, well documented, highly maintainable websites and web applications in MVC or section-like architectures in PHP, Python, or Node JS.",
+          "Basic familiarity with web development in Ruby, JSP, and C# and ability to maintain and amend code in these languages with a documentation in hand.",
+          "Familiarity with various PHP frameworks like Slim, Laravel, and Wordpress, and dependency management systems like Composer and professional experience in some of them.",
+          "Professional experience and familiarity with various HTML templating languages like Blade and Twig.",
+          "Ability to write node modules and packages, and well documented, object-oriented / prototype inheritence-based Javascript libraries.",
+          "Familiarity with a very large amount of node packages, modules, and frameworks, and ability to use them masterfully with a documentation in hand.",
+          "Full understanding of the HTTP protocol, its status responses, types of requests, performance, and ability to use various debugging and profiling tools to test server performance as well as ability to build own tools for profiling server side code.",
+          "Familiar with concepts of dependency injection, instrumentation, entity-based programming, separation of code layers, code migrations, and URL routing.",
+          "Ability to use many tools for serving developed content, like apache and nginx, fluidly.",
+          "Ability to write code with a strong security outlook. Professional experience in writing code with minimal attack vectors in general, and zero injection vectors, zero XSS vectors, zero brute attack vectors, and zero timing attack vectors specifically.",
+          "Experience working with various database systems (InnoDB and MariaDB for MySQL, SQL Server, SQLite, an d MongoDB) and ability to abstract all database interactions from other layers of software."
+        ]
+      },
+      { "title"       : "Web Design",
+        "bullets"        : [
+          "Strong familiarity with and professional experience in HTML, CSS, Javascript for Web Browsers. Ability to implement any given UI / Website design to look optimal on a dynamic range of screen sizes.",
+          "Familiarity with CSS preprocessors like LESS, SASS, and SCSS, and with CSS3 features, and general CSS concepts like breakpoints, grids, table layouts, flex layouts and wrappable elements.",
+          "Professional experience and ability to implement a variety of commonly used UX design elements such as drag-and-drop uploads, preflight progress bars, draggable cascaded window-like elements, animated hover menus, sortable filterable tables, paginated views, animated logos, and many others, and ability to use either libraries or vanilla Javascript for them.",
+          "Ability to work with various Javascript processing tools such as Gulp, Bower, and Typescript engines, as well as build automated environments to facilitate integrating development code in a production environment.",
+          "Professional experience and ability to work with various CSS and JS organization and versioning schemes and work with minifiers to serve low-size production scripts.",
+          "Ability to write code that requires little or no CSS and JS dependencies, and that acts reliably under a variety of test conditions.",
+          "Ability to build web applications that rely on optimal use of XHR requests and hav powerful API tools that facilitate monitoring and moderation.",
+          "Strong understanding of DOM elements and how the browser renders them. Strong understanding of browser implementations of W3C specifications. Ability to write W3C valid code that behaves reliably in a variety of different modern browsers.",
+          "Professional experience using various browser debugging, testing, and profiling tools to test and enhance client-side code performance and user experience.",
+          "Up to date with the latest Javascript, WebRTC, and Request API technologies. Complete ability to use advanced Javascript features like service workers and browser database to control request routing, caching and speed up loading and deliver a satisfactory offline experience."
+        ]
+      },
+      { "title"       : "Software Design",
+        "bullets"     : [
+          "Ability to design cross-platform software using web frameworks and desktop frameworks such as Qt, NW.js, embedded chromium, and electron.",
+          "High familiarity with computer software theories, and the software life cycle.",
+          "Ability to build basic Android apps in Java with a documentation at hand.",
+          "Ability to build basic Windows 8+ and Windows Phone apps in C# with a documentation at hand.",
+          "Ability to build basic computer applications in LUA.",
+          "Ability to build basic Windows applications using C++ employing STL and windows libraries with a documentation at hand.",
+          "Ability to build basic form-like windows applications using Visual Basic on Visual Studio with a documentation at hand.",
+          "Ability to create various automation scripts that facilitate code production and running them as Windows / Linux services.",
+          "Basic ability to debug and patch compiled software using OllyDbg and WinDbg.",
+          "Ability to follow through, make sense of, and make minor modifications to source code written in any programming language.",
+          "Professional experience and ability to build advanced, powerful Node.JS CLI applications to serve a variety of different businesses, and develop Web UI for them.",
+          "Ability to create various code parsers and syntax highlighters using powerful reliable scope matching, lexing, and tokenizing logic and requiring a very thorough understanding of regex and the underlying computer science principles.",
+          "Professional experience designing complex tools for crawling and scraping data of various database and networking websites based on certain search terms and making smart decisions to evaluate the ranking of information."
+        ]
+      },
+      { "title"       : "System Administration",
+        "bullets"     : [
+          "Professional experience working with Windows and Linux servers.",
+          "Ability to quickly provision VPS machines, and write provision scripts that allow out-of-the-box development in virtual machines.",
+          "Ability to create batch files to install and modify software. Good understanding of how to manage tasks, applications and services in Windows / Linux",
+          "Ability to work with various server applications such as SMTP based mail clients, FTP applications, and SCP applications.",
+          "Ability to work with various Linux and Windows package managers and application version control managers.",
+          "Ability to check for and clean malware without an anti-virus.",
+          "Technical knowledge and experience in writing various security scripts to heavily mitigate the risk of an attack on Windows operating systems.",
+          "Ability to write basic C / C++ / sh batches, along with using other Linux tools like cron, curl, to automate various server tasks.",
+          "Ability to build various AHK bots that mimic users to run tests on finalized software.",
+          "Professional experience building Rasberry Pi home-servers for various individuals."
+        ]
+      },
+      { "title"       : "Software Troubleshooting",
+        "bullets"     : [
+          "Ability to install, clean, and troubleshoot Windows, Linux and their applications and to trace errors back to the problem.",
+          "Strong understanding of advanced Operating System theory, with good understanding of various file systems nd how they work, hard disk organization, physical memory usage and paging, kernel and IRQs, hardware driver logic and DMI, among various other mechanics.",
+          "Ability to connect computer networks, trace routes and packets, test open ports, and dump, debug and make sense of various network related information.",
+          "Basic ability to simulate missing computer hardware or system calls in order to allow software that runs on them to run compatibly."
+        ]
+      },
+      { "title"       : "Embedded Systems",
+        "bullets"     : [
+          "Ability to build general purpose control systems in AVR based micro-controllers (ATMega, Arduino, etc.) and ARMv7 based controllers (Raspberry Pi, etc.) and build control code for various types of numerical control machines.",
+          "Professional experience and ability to build GUI computer software that interact with controllers through serial port to allow enhance user experience for the aforementioned control systems.",
+          "Professional experience writing code for image recognition systems and autonomous motor systems for various special purpose ground vehicle robots."
+        ]
+      }
+    ],
+    "other"         : [
+      { "title"       : "Translation and Editing",
+        "bullets"     : [
+          "Ability to type English at an error-free average of 101 WPM, and up to 114 WPM.",
+          "Ability to revise grammar, usage, and structure of English sentences to form more fluid and compelling passages. Ability to revise tense consistency and writing style consistency.",
+          "Ability to translate AR->EN professionally.",
+          "Ability to translate simple Japanese texts JP->EN."
+        ]
+      },
+      { "title"       : "Tutoring",
+        "bullets"     : [
+          "Ability to provide an interactive classroom environment with the aid of self-built software expirements.",
+          "Professional experience and ability to explain highly complex technical topics in multiple abstraction layers and an easy to follow theory-focused style.",
+          "Professional experience teaching mathematics, physics, and Javascript.",
+          "Amateur experience teaching other subjects in the field of electrical engineering provided I have a profound understanding of them, such as Random Number Theory and Electromagnetic Field Theory."
+        ]
+      },
+      { "title"       : "Graphic Design",
+        "bullets"     : [
+          "Ability to use Photoshop expertly in all of digital art, graphic design, and photo manipulation.",
+          "Professional ability to make various designs for print (banners, leaflets, posters) and make mockups for them.",
+          "Ability to produce and render apngs, optimized dithered gifs, and short video sequences from existing videos / image sequences.",
+          "Moderate knowledge of color theory (RGB, CMYK) and how computers handle colors. Knowledge of the construction of various image format files (PNG, JPEG) and how modification affects them.",
+          "Ability to use a professional DSLR Camera to take stock photographs / Textures needed for creating certain web graphics."
+        ]
+      },
+      { "title"       : "Software Usage",
+        "bullets"     : [
+          "Adobe Collection: Ability to use Photoshop, Flash and Dreamweaver professionally. Ability to use AfterEffects, Illustrator and Audition as a hobbyist.",
+          "Ability to use various CLI tools like FFMPEG for encoding / rendering, OptiPNG for optimizing network graphics, and MinGW for compiling and building code professionally, without needing GUIs for them.",
+          "Office Collection: Ability to use Word, Powerpoint, Excel, OneNote, and Access with all their advanced features expertly, and ability to write Visual Basic scripts and certain other addons for them.",
+          "Experience using various engineering software like Proteus, CircuitWizard, MATLAB, Solidworks, and Mathematica.",
+          "Professional experience using subtitling software like Aegisub, Mocha, and writing LUA scripts to automate various typesetting tasks."
+        ]
+      },
+      { "title"       : "Cryptography",
+        "bullets"     : [
+          "Good understanding of hashing mechanisms and hashing algorithms.",
+          "Profound understanding of how CPU / GPU performance affects cryptographic algorithm speeds, and how internal differences between processor architectures affect their efficiency in executing cryptographic functions.",
+          "Good understanding of encryption algorithms, and RSA keys, and secure protocols, with the ability to fully follow through their RFC keys.",
+          "Good understanding of other Information Science concepts such as lossless compression, lossy compression, error correction, redundancy checks, and data processing / transfer mechanics.",
+          "Good technical understanding of how cryptocurrencies and blockchain systems work, with the ability to understand the architecture of decentralized applications, and read scientific papers on the topic.",
+          "Basic hands-on experience in password cracking, encrypted message decoding, and other forms of attempts on attacking secure systems.",
+          "Moderate knowledge of the history and evolution of cryptography."
+        ]
+      }
+    ]
+  },
+  "education"     : [
+    { "title"       : "Benha Faculty of Engineering",
+      "company"     : "Bachelors of Engineering",
+      "date"        : ["Sep 2013", "Present"],
+      "bullets"     : [
+        "Studied communication and computer engineering.",
+        "Profound understanding of Computer Architecture, Computer Organization, Digital Logic Circuit Design, <br>and Computer Software.",
+        "Distinguished grades (95%+) in Random Theory, Microprocessor, Signals and Systems, and Engineering Drawing.",
+        "Was a member of the student union, scientific committee."
+      ]
+    },
+    { "title"       : "Nada International School",
+      "company"     : "American High School Diploma",
+      "date"        : ["Sep 2007", "Jul 2013"],
+      "bullets"     : [
+        "Achieved a score of 2050 on the SAT I in 2011.",
+        "Achieved scores of 800, 800, 800, 790, and 760 on SAT II - Physics, Maths I, Maths II, Biology, and Chemistry <br>respectively in 2012.","Was president of the Chess Club"
+      ]
+    }
+  ],
+  "courses"       : [
+    { "title" : "Udacity Google Developer Challenge - Mobile Web Track", "date" : "Oct 2017"},
+    { "title" : "Udacity Web Design and Development Course", "date" : "Jun 2017"}
+  ],
+  "student activities" : [
+    { "title"       : "IEEE Benha University Branch",
+      "company"     : "IT Member",
+      "date"        : ["Oct 2015", "May 2018"],
+      "bullets"     : [
+        "Instructed Programming at BrainVo Crash Courses.",
+        "Tutored the media team in IEEE recruitment camp."
+      ]
+    },
+    { "title"       : "EMEC Benha",
+      "company"     : "Head of Media",
+      "date"        : ["Oct 2014", "Jun 2016"],
+      "bullets"     : [
+        "Spearheaded media organization of IRC 2017 Competition.",
+        "Designed and built robotics playground for use in IRC 2016."
+      ]
+    },
+    { "title"       : "El Rokn Technology Center",
+      "company"     : "Technical Instructor",
+      "date"        : ["Oct 2013", "May 2015"],
+      "bullets"     : [
+        "Taught Actionscript to small groups.",
+        "Designed multiple printable media for advertisement campaigns."
+      ]
+    }
+  ],
+  "awards and honors"  : [
+    { "title" : "Qalyubiya Governate Honor Shield", "date" : "Nov 2017", "place" : "Qalyubiya - Egypt" },
+    { "title" : "Landmine-Free International Minesweeper Competition - 1st Place", "date" : "Oct 2017", "place" : "Kuala Lampur - Malaysia" },
+    { "title" : "Microsoft Imagine Camp Benha - 2nd Place", "date" : "Feb 2016", "place" : "Qalyubiya - Egypt" }
+  ],
+  "languages"     : [
+    { "title" : "English", "level" : "Native" },
+    { "title" : "Arabic",  "level" : "Fluent" },
+    { "title" : "Japanese", "level" : "Good (JLPT n3)" }
+  ],
+  "soft skills"   : ["Collaboration", "Adaptability", "Analytical Thinking", "Instruction Skills", "Enthusiasm"],
+  "interests"     : ["Technical Instruction", "Programming", "Graphic Design", "Encoding", "Translation", "Writing", "reading", "playing Chess", "Watching Animation"]
+}
