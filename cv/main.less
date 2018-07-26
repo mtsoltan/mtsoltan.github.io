@@ -12,63 +12,64 @@
 @pagewidth: 210mm;
 
 * {
-	background-repeat: no-repeat;
-	box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	-webkit-box-sizing: border-box;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
 }
 html, body {
-	width: @pagewidth;
-	// height: @pageheight * 3;
-	font-size: 10pt;
-	line-height: 1.45;
-	font-family: 'Open Sans', sans-serif;
-	padding:0;
-	margin:0;
-	left: 50%;
-	margin-left: @pagewidth / -2;
-	background: @white;
-	user-select: none;
+  width: @pagewidth;
+  // height: @pageheight * 3;
+  font-size: 10pt;
+  line-height: 1.45;
+  font-family: 'Open Sans', sans-serif;
+  padding:0;
+  margin:0;
+  left: 50%;
+  margin-left: @pagewidth / -2;
+  background: @white;
+  user-select: none;
   -moz-user-select: none;
   -webkit-user-select: none;
   -ms-user-select: none;
-	color: @cdark;
+  color: @cdark;
+  background-color: @clight;
 }
 a { color: @cdlink; }
 li { margin-bottom: 0; }
 img { max-width: 100%; }
 html, body, body > div {
-	position: absolute;
+  position: absolute;
 }
 .page {
-	height: @pageheight;
+  height: @pageheight;
   width: @pagewidth;
   position: absolute;
   display: block;
-	margin:0;
+  margin:0;
   border: 1px solid @cdark;
 }
 h1,h2,h3,h4,h5 { margin: 0; font-family: "Montserrat";}
 .title:not(.job) { font-family: "Montserrat"; font-size: 12pt; margin-bottom: 1mm; font-weight: bold;}
 .subtitle { font-family: "Montserrat"; font-size: 12pt; color: @cdlink; text-decoration: underline; margin-top: 1mm;}
 .top {
-	a { color: @cllink; }
-	top: 0; left: 0;
-	width: 100%;
-	height: @topheight;
-	background: @cmain;
-	color: @clight;
-	.header { float: left; }
-	.header.left {
-		font-size: 12pt;
-		width: 95mm;
-		padding: 5mm 5mm 5mm 10mm;
-	}
-	.header.spacer { width: 0.4mm; border-radius: 0.2mm; height: 24mm; margin: 3mm 0; background-color: @clight; position: relative; }
-	.header.right {
-		font-size: 10pt;
-		padding: 5mm;
-	}
+  a { color: @cllink; }
+  top: 0; left: 0;
+  width: 100%;
+  height: @topheight;
+  background: @cmain;
+  color: @clight;
+  .header { float: left; }
+  .header.left {
+    font-size: 12pt;
+    width: 95mm;
+    padding: 5mm 5mm 5mm 10mm;
+  }
+  .header.spacer { width: 0.4mm; border-radius: 0.2mm; height: 24mm; margin: 3mm 0; background-color: @clight; position: relative; }
+  .header.right {
+    font-size: 10pt;
+    padding: 5mm;
+  }
 
 }
 .skill .title:after {
@@ -101,9 +102,10 @@ h1,h2,h3,h4,h5 { margin: 0; font-family: "Montserrat";}
 ul.languages { font-size: inherit; }
 .job.title { font-weight: bold; }
 .container {
+  background-color: @white;
   padding: 5mm;
-	top: @topheight;
-	hr { color: @cmain; background-color: @cmain; border: 0; height: 1px; margin: 3mm 0; opacity: 0.2; }
+  top: @topheight;
+  hr { color: @cmain; background-color: @cmain; border: 0; height: 1px; margin: 3mm 0; opacity: 0.2; }
 }
 .key { text-align: justify; }
 .key, .key > div { vertical-align: top; }
