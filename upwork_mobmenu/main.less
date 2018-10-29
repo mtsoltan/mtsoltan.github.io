@@ -1,0 +1,100 @@
+@desktop: ~"only screen and (min-width: 1025px)";
+@desktop-or-tablet: ~"only screen and (min-width: 768px)";
+@tablet: ~"only screen and (min-width: 768px) and (max-width: 1024px)";
+@mobile-or-tablet: ~"only screen and (max-width: 1024px)";
+@mobile: ~"only screen and (max-width: 767px)";
+
+@blue: #415061; // Solid Blue
+@dark-blue: #213051; // Dark Blue
+@dark-grey: #1B2026; // Dark Grey
+@light-grey: #e9e9e9; // Light Grey
+@menu-element: rgb(46,57,28); // Dark Olive
+@gradient-c1: #292E49;
+@gradient-c2: #536976;
+.gradient-bg {
+	background: -webkit-linear-gradient(to right, @gradient-c1, @gradient-c2);
+	background: linear-gradient(to right, @gradient-c1, @gradient-c2);
+}
+.select-none {
+	user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+* {
+	background-repeat: no-repeat;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+html, body {
+	font-family: 'Open Sans', sans-serif;
+	padding:0;
+	margin:0;
+	.gradient-bg;
+	.select-none;
+	color: @light-grey;
+}
+.top.content {
+	height: 500px;
+	position: relative;
+}
+.bottom.content {
+	height: 500px;
+	position: relative;
+}
+.navbar {
+	height: 150px;
+	background: @dark-grey;
+	text-align: center;
+	text-transform: uppercase;
+	white-space: nowrap;
+	overflow-x: auto;
+	-webkit-overflow-scrolling: touch;
+	-ms-overflow-style: -ms-autohiding-scrollbar;
+	div {
+		position: relative;
+		display: inline-block;
+		vertical-align: bottom;
+	}
+	i {
+		font-size: 64px;
+		display: block;
+		margin: 15px;
+	}
+	a[href] {
+		width: 150px;
+		height: 150px;
+		text-decoration: none;
+		color: @light-grey;
+		padding: 15px;
+		display: inline-block;
+		font-family: 'Montserrat', sans-serif;
+		transition: all 0.2s ease;
+	}
+	a:hover {
+		background-color: @blue;
+
+	}
+	a::before {
+		content: '';
+		position: absolute;
+		background: @light-grey;
+		height: 2px;
+		transform: scale(0);
+		transform-origin: top right;
+		transition: 0.2s ease;
+		opacity: 0;
+		bottom: 0;
+		right: 0;
+		left: 0;
+	}
+	a:hover::before {
+		background-color: @light-grey;
+		transform: scale(1);
+		opacity: 1;
+	}
+	div.active a {
+		background-color: @dark-blue;
+	}
+}
