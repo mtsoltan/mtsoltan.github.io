@@ -312,5 +312,5 @@
     { "title" : "Japanese", "level" : "Good (JLPT n2)" }
   ],
   "soft skills"   : ["Collaboration", "Adaptability", "Analytical Thinking", "Instruction Skills", "Enthusiasm"],
-  "interests"     : ["Technical Instruction", "Programming", "Graphic Design", "Encoding", "Translation", "Writing", "reading", "playing Chess", "Watching Animation"]
+  "interests"     : ["Technical Instruction", "Programming", "Graphic Design", "Encoding", "Translation", "Writing", "Reading", "Deep Learning", "Playing Chess", "Watching Animation"]
 }
