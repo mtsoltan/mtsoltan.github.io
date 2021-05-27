@@ -13,12 +13,13 @@ function readJson(file, callback) {
 function titleCase(str) {
   var splitStr = str.toLowerCase().split(' ');
   for (var i = 0; i < splitStr.length; i++) {
-    splitStr[i] = splitStr[i].charAt(0).toUpperCase() + splitStr[i].substring(1);     
+    splitStr[i] = splitStr[i].charAt(0).toUpperCase() + splitStr[i].substring(1);
   }
-   return splitStr.join(' '); 
+   return splitStr.join(' ');
 }
 
 function buildTop(cv) {
+  document.title = cv.name + " CV";
   return `
     <div class="top">
       <div class="header left">
@@ -39,16 +40,25 @@ function buildList(bullets) {
   for (let i in bullets) {
     rv += "<li>" + bullets[i] + "</li>";
   }
-  
+
   return "<ul>" + rv + "</ul>";
 }
 
 function buildContent(cv) {
   let rv = [];
+  let halfCounter = 0;
   for (let i in cv.organization1) {
-    header1 = cv.organization1[i];
-    section1 = cv[header1];
-    rv.push(`<div class="key"><div class="title">${titleCase(header1)}</div>`);
+    let header1 = cv.organization1[i];
+    let section1 = cv[header1];
+    let half = false;
+    if (section1[0] === true) {
+        half = true;
+        halfCounter++;
+    } else {
+        if (halfCounter > 0) rv.push("<hr>");
+        halfCounter = 0;
+    }
+    rv.push(`<div class="key${half ? " half" : ""}"><div class="title">${titleCase(header1)}</div>`);
     if (["work experience", "skills"].includes(header1)) {
       for (let j in cv.organization2) {
         header2 = cv.organization2[j];
@@ -93,21 +103,45 @@ function buildContent(cv) {
         }
         rv.push(rvx.join('<br>'));
     }
-    if (header1 == "languages") {
+    if (
+        [
+            "languages",
+            "programming languages",
+            "frameworks and libraries",
+            "database systems",
+            "hardware",
+            "other technologies and shells"
+        ].includes(header1)
+    ) {
         let rvx = [];
         for (let k in section1) {
+          if (section1[k] === true) continue; // Half should not count.
           section3 = section1[k];
           rvx.push("<li><b>" + section3.title + "</b> - " + section3.level + "</li>")
         }
         rv.push(`<ul class="languages">${rvx.join('')}</ul>`);
     }
-    if (["soft skills", "interests"].includes(header1)) {
+    if (
+        [
+            "soft skills",
+            "interests",
+            "graduation project"
+        ].includes(header1)
+    ) {
       rv.push(section1.join(', '));
     }
-    rv.push(`</div><hr>`);
+    let hr = "";
+    if (halfCounter % 2 == 0) {
+        hr = "<hr>";
+    }
+    console.log(halfCounter);
+    rv.push(`</div>${hr}`);
   }
-  
-  return `<div class="container"><div class="key small-font">${cv.pitch}</div><hr>${rv.join('')}</div>`;
+
+  // The replace is because in odd situations (two full halves, followed by a normal section),
+  // both hr add conditions will be true and two hr's will be added.
+  // It is much easier to remove one of them than to handle it properly so that just one hr is added.
+  return `<div class="container"><div class="key small-font">${cv.pitch}</div><hr>${rv.join('').replace("<hr><hr>", "<hr>")}</div>`;
 }
 
 
